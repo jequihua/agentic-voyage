@@ -284,7 +284,7 @@ Optional workspaces are added based on project needs.
 
 ## 5. Example Workspace Configurations
 
-###Minimal Local Project
+### Minimal Local Project
 
 ```text
 00_brief/
