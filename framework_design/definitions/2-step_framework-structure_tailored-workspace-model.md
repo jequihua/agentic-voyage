@@ -284,7 +284,7 @@ Optional workspaces are added based on project needs.
 
 ## 5. Example Workspace Configurations
 
-Minimal Local Project
+###Minimal Local Project
 
 ```text
 00_brief/
@@ -293,7 +293,11 @@ Minimal Local Project
 03_experiments/
 04_delivery/
 05_governance/
-ML + Infra Project
+```
+
+### ML + Infra Project
+
+```text
 00_brief/
 01_data/
 02_analysis/
@@ -301,7 +305,11 @@ ML + Infra Project
 04_delivery/
 05_governance/
 06_infra/
-Full System (ML + Infra + App)
+```
+
+### Full System (ML + Infra + App)
+
+```text
 00_brief/
 01_data/
 02_analysis/
