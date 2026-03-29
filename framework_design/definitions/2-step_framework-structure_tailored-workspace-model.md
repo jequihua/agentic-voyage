@@ -380,7 +380,7 @@ Optional workspaces added as needed. See examples below.
 09_ops/
 ```
 
-Summary
+## Summary
 
 This structure:
 
