@@ -367,7 +367,7 @@ The result is a system that prioritizes:
 
 Proposed step-by-step plan
 
-## Here is the list of steps I’d use before we fill in the details:
+## Necessary steps
 
 01. Define framework scope for your kind of projects
      Decide exactly what project types this framework must cover for you.
