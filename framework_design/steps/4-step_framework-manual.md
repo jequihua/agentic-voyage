@@ -27,19 +27,25 @@ Decide project type and required workspaces.
 ## Phase 1 — Initialize Structure
 
 ### Core Workspaces
+
+```text
 00_brief/
 01_data/
 02_analysis/
 03_experiments/
 04_delivery/
 05_governance/
+```
 
 ### Optional
+
+```text
 06_infra/
 07_app/
 08_pkg/
 09_ops/
 90_legacy_review/ (Mode B only)
+```
 
 ---
 
