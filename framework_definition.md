@@ -364,3 +364,40 @@ The result is a system that prioritizes:
 - transparency
 - reliability
 - and long-term usability
+
+Proposed step-by-step plan
+
+## Here is the list of steps I’d use before we fill in the details:
+
+01. Define framework scope for your kind of projects
+     Decide exactly what project types this framework must cover for you.
+02. Choose the default workspace structure
+     Lock the top-level folders and decide whether you need extra infra/app workspaces.
+03. Define the core artifact set
+     Decide which documents/artifacts every project must have.
+04. Define agent roles and review flow
+     Clarify Claude’s role, GPT’s role, second-review role, and convergence method.
+05. Define the root instruction file
+     Specify what AGENTS.md or CLAUDE.md should always contain.
+06. Define per-workspace CONTEXT.md files
+     Decide what each workspace context file should include.
+07. Define project lifecycle stages
+     Map how a project moves from idea to delivery under this framework.
+08. Define task execution rules
+     Decide how you start a task, how work is performed, and what counts as done.
+09. Define review and convergence artifacts
+     Create the structure for reviewer comments, synthesis, and resolution.
+10. Define the reusable skills catalog
+     Decide which repeatable workflows should become skills first.
+11. Define tooling and MCP boundaries
+     Decide when to use local repo context vs cloud tools vs external systems.
+12. Define coding/infrastructure conventions
+     Establish how Python, notebooks, Docker, Terraform, configs, and tests fit in.
+13. Define experiment and data governance rules
+     Decide how to track runs, data versions, thresholds, samples, and validation.
+14. Define deployment/project-output patterns
+     Cover batch pipelines, APIs, webapps, and human-in-the-loop review apps.
+15. Create the project initialization template
+     Turn all of the above into the starter structure for any new project.
+16. Create the operating manual
+     Write the step-by-step instructions you’ll actually follow on each new project.
