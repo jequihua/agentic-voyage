@@ -39,12 +39,12 @@ Define the project’s objective and constraints.
 
 Contains:
 
-problem statement
-business/scientific goals
-success metrics
-constraints (technical, financial, ecological)
-assumptions
-non-goals
+- problem statement
+- business/scientific goals
+- success metrics
+- constraints (technical, financial, ecological)
+- assumptions
+- non-goals
 
 Role in system:
 Acts as the decision anchor for the entire project.
@@ -56,13 +56,13 @@ Define and validate all data used in the project.
 
 Contains:
 
-data sources
-schemas
-provenance
-data quality assessments
-leakage risks
-dataset splits
-storage structure
+- data sources
+- schemas
+- provenance
+- data quality assessments
+- leakage risks
+- dataset splits
+- storage structure
 
 Role in system:
 Acts as the trust anchor for all downstream work.
@@ -74,12 +74,12 @@ Perform exploratory analysis and generate hypotheses.
 
 Contains:
 
-exploratory notebooks
-visualizations
-statistical summaries
-observations
-hypotheses
-literature references
+- exploratory notebooks
+- visualizations
+- statistical summaries
+- observations
+- hypotheses
+- literature references
 
 Role in system:
 Acts as the interpretation layer between data and modeling.
@@ -91,13 +91,13 @@ Design, run, and evaluate experiments.
 
 Contains:
 
-experiment plans
-configurations
-model training code
-evaluation metrics
-run summaries
-comparisons to baselines
-error analysis
+- experiment plans
+- configurations
+- model training code
+- evaluation metrics
+- run summaries
+- comparisons to baselines
+- error analysis
 
 Role in system:
 Acts as the evidence factory.
@@ -109,12 +109,12 @@ Prepare final outputs for stakeholders or systems.
 
 Contains:
 
-reports
-model cards
-summaries
-deployment readiness notes
-data products
-exportable results
+- reports
+- model cards
+- summaries
+- deployment readiness notes
+- data products
+- exportable results
 
 Role in system:
 Acts as the communication and deployment layer.
@@ -126,30 +126,32 @@ Track decisions, reviews, and non-technical constraints.
 
 Contains:
 
-decision logs
-review logs
-cost tracking
-assumptions registry
-risks/issues
-change logs
+- decision logs
+- review logs
+- cost tracking
+- assumptions registry
+- risks/issues
+- change logs
 
 Role in system:
 Acts as the control and audit layer.
 
 This workspace is critical for:
 
-reproducibility
-cost awareness
-structured decision-making
+- reproducibility
+- cost awareness
+- structured decision-making
 
 ## 2. Optional Workspaces (Added When Needed)
 
 These workspaces are included only when required by the project.
 
+```text
 06_infra/
 07_app/
 08_pkg/
 09_ops/
+```
 
 ### 2.1 06_infra — Infrastructure and Execution Environment
 
@@ -158,13 +160,13 @@ Define how the system runs.
 
 Contains:
 
-Dockerfiles
-Terraform configurations
-cloud architecture descriptions
-SLURM scripts
-storage definitions (S3, GCS, etc.)
-deployment scripts
-cost-related infra notes
+- Dockerfiles
+- Terraform configurations
+- cloud architecture descriptions
+- SLURM scripts
+- storage definitions (S3, GCS, etc.)
+- deployment scripts
+- cost-related infra notes
 
 Special Notes:
 
@@ -181,10 +183,10 @@ Implement application interfaces.
 
 Use cases:
 
-webapps for expert validation
-dashboards with logic
-APIs
-annotation tools
+- webapps for expert validation
+- dashboards with logic
+- APIs
+- annotation tools
 
 When to use:
 
@@ -201,10 +203,10 @@ Encapsulate reusable code.
 
 Contains:
 
-Python packages
-R packages (if applicable)
-shared utilities
-reusable pipelines
+- Python packages
+- R packages (if applicable)
+- shared utilities
+- reusable pipelines
 
 Special Notes:
 
@@ -221,11 +223,11 @@ Support long-term or recurring workflows.
 
 Contains:
 
-monitoring scripts
-scheduled jobs
-maintenance workflows
-alerting systems
-operational runbooks
+- monitoring scripts
+- scheduled jobs
+- maintenance workflows
+- alerting systems
+- operational runbooks
 
 When to use:
 
@@ -257,9 +259,9 @@ Each workspace produces and consumes artifacts.
 
 The structure supports:
 
-local workflows
-HPC environments
-cloud pipelines
+- local workflows
+- HPC environments
+- cloud pipelines
 
 ### 3.6 Flexibility
 
@@ -269,18 +271,22 @@ Not all projects require all workspaces.
 
 A new project typically starts with:
 
+```text
 00_brief/
 01_data/
 02_analysis/
 03_experiments/
 04_delivery/
 05_governance/
+```
 
 Optional workspaces are added based on project needs.
 
 ## 5. Example Workspace Configurations
 
 Minimal Local Project
+
+```text
 00_brief/
 01_data/
 02_analysis/
@@ -306,6 +312,7 @@ Full System (ML + Infra + App)
 07_app/
 08_pkg/
 09_ops/
+```
 
 ## Summary
 
